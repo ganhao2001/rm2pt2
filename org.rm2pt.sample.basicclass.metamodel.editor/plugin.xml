@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated basicclass -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.rm2pt.sample.basicclass.metamodel.basicclass.presentation.BasicclassModelWizardID"
+            name="%_UI_BasicclassModelWizard_label"
+            class="org.rm2pt.sample.basicclass.metamodel.basicclass.presentation.BasicclassModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BasicclassModelFile.gif">
+         <description>%_UI_BasicclassModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated basicclass -->
+      <editor
+            id="org.rm2pt.sample.basicclass.metamodel.basicclass.presentation.BasicclassEditorID"
+            name="%_UI_BasicclassEditor_label"
+            icon="icons/full/obj16/BasicclassModelFile.gif"
+            extensions="basicclass"
+            class="org.rm2pt.sample.basicclass.metamodel.basicclass.presentation.BasicclassEditor"
+            contributorClass="org.rm2pt.sample.basicclass.metamodel.basicclass.presentation.BasicclassActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
